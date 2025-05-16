@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Surprise</title>
+    <link rel="stylesheet" href="ld.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mystery-box">
+            <h1>This is something strange!</h1>
+            <button onclick="explode()">Open the Mystery</button>
+        </div>
+        <div class="explosion" id="explosion">💥</div>
+    </div>
+
+    <script>
+        function explode() {
+            const explosion = document.getElementById('explosion');
+            explosion.classList.add('show');
+            setTimeout(() => {
+                explosion.classList.remove('show');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
